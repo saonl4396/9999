@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      <img src="//game.gtimg.cn/images/lol/v3/logo-public.png" alt="">
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">添加</button>
+    </h1>
+    <!-- 添加的模态框 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">添加内容</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="control-label">标题：</label>
+                <input type="text" class="form-control" id="title">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="control-label">位置:</label>
+                <textarea class="form-control" id="pos"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="control-label">想法:</label>
+                <textarea class="form-control" id="idea"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary" id="save">保存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="bs-example" data-example-id="striped-table"> -->
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>标题</th>
+            <th>位置</th>
+            <th>想法</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <!-- 删除确认框 -->
+      
+      <div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="gridSystemModalLabel">提示</h4>
+            </div>
+            <div class="modal-body">
+              哇哦！再考虑考虑吧！
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-primary" id="sure-del">确定</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    </div>
+    <!--修改框 -->
+    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">修改内容</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="control-label">标题：</label>
+                <input type="text" class="form-control" id="title">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="control-label">位置:</label>
+                <textarea class="form-control" id="pos"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="control-label">想法:</label>
+                <textarea class="form-control" id="idea"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary" id="update-data">保存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="./js/jquery-2.2.4.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="../bootstrap/libs/ajax.js"></script>
+  <script src="../bootstrap/./libs/index.js"></script>
+</body>
+
+</html>
